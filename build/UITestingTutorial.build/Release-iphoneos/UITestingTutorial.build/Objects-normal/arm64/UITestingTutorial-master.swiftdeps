@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
+options: "917371b71035dca77f28e110fce9ffa1605297a5c6a0a78f0157ec977828f850"
+build_start_time: [1640033193, 954128980]
+build_end_time: [1640033198, 725996971]
+inputs:
+  "/Users/illiapavlov/Documents/person_info/ios-ui-testing-tutorial/UITestingTutorial/AppDelegate.swift": [1639759278, 999388694]
+  "/Users/illiapavlov/Documents/person_info/ios-ui-testing-tutorial/UITestingTutorial/LoginViewController.swift": [1640031345, 55592775]
+  "/Users/illiapavlov/Documents/person_info/ios-ui-testing-tutorial/UITestingTutorial/TableViewController.swift": [1639759279, 1080751]
