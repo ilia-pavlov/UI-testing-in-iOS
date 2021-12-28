@@ -1,14 +1,14 @@
 {
   "configurations" : [
     {
-      "id" : "B96B82E4-8A6B-4455-930C-814B4765D297",
+      "id" : "1B572BAA-79FF-4058-85E6-EA0AD223ABDC",
       "name" : "US English",
       "options" : {
 
       }
     },
     {
-      "id" : "B9AA12C2-01A4-419C-B4C2-D711B2FC1048",
+      "id" : "AE3697A6-5C03-4AA5-9AEE-5CEE0C1439AA",
       "name" : "German",
       "options" : {
         "language" : "de",
@@ -17,12 +17,7 @@
     }
   ],
   "defaultOptions" : {
-    "targetForVariableExpansion" : {
-      "containerPath" : "container:UITestingTutorial.xcodeproj",
-      "identifier" : "987AF0DF214CB12300AAE972",
-      "name" : "UITestingTutorial"
-    },
-    "testExecutionOrdering" : "random"
+    "testTimeoutsEnabled" : true
   },
   "testTargets" : [
     {

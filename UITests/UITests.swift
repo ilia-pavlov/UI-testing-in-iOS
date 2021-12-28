@@ -9,14 +9,15 @@
 import XCTest
 
 class UITests: XCTestCase {
-
+ 
+    //var app: XCUIApplication!
     let app = XCUIApplication()
     let device = XCUIDevice.shared
     
     override func setUpWithError() throws {
-       
-        continueAfterFailure = false
+       continueAfterFailure = false
         
+      //  var app: XCUIApplication!
         app.launch()
         device.orientation = .portrait
         
