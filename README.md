@@ -1,6 +1,7 @@
-# ios-ui-testing-tutorial
+### As a basic work was taken from ios-ui-testing-tutorial
 The starter code for the UI Testing Tutorial YouTube video. 
 - [UI Testing iOS Tutorial](https://youtu.be/rmKbsQ41wVY)
+
 
 ## test structurte 
 I expended current tutorial and created a couple separate classes as `base class` for custome `func`
