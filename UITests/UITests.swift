@@ -100,5 +100,30 @@ class UITests: XCTestCase {
         XCUIDevice.shared.orientation = .faceUp
         
     }
+    /* flacky test example, root case is order, XCUI tap on usernameTextField
+        earlier then login page completed rendering */
+    func testLoginFlow() {
+      
+        app.buttons["Profile"].tap()
+
+        let usernameTextField = app.textFields["Username"]
+        XCTAssertTrue(usernameTextField.waitForExistence(timeout: 4), "Element wasn't rendered on screen")
+        
+        usernameTextField.tap()
+        
+        usernameTextField.typeText(AccessibilityIndetifier.UserName.rawValue)
+        
+        let passwordfield =  app/*@START_MENU_TOKEN@*/.secureTextFields["PasswordField"]/*[[".secureTextFields[\"Password\"]",".secureTextFields[\"PasswordField\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        passwordfield.tap()
+        passwordfield.typeText(AccessibilityIndetifier.PasswordUniq.rawValue)
+        
+        
+        app/*@START_MENU_TOKEN@*/.staticTexts["Login"]/*[[".buttons[\"Login\"].staticTexts[\"Login\"]",".staticTexts[\"Login\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        let NewMusicSection = app.tables.staticTexts["NewMusicSection_ID"]
+        XCTAssertTrue(NewMusicSection.exists)
+        
+        
+    }
 }
 

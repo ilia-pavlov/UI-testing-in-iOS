@@ -1,14 +1,15 @@
 //
-//  1.swift
-//  UITestingTutorial
+//  locatorFuncTest.swift
+//  UITestingTutorialUITests
 //
-//  Created by Ilia Pavlov on 12/20/21.
+//  Created by Ilia Pavlov on 12/30/21.
 //  Copyright © 2021 Code Pro. All rights reserved.
 //
 
 import XCTest
+import UITestingTutorial
 
-class _: XCTestCase {
+class locatorFuncTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -27,8 +28,8 @@ class _: XCTestCase {
     }
 
     func testExample() throws {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+       LoginScreen(app: app)
+            .tapButton(get_profile())
+            .textFieldAvailable(get_userName())
     }
-
 }
