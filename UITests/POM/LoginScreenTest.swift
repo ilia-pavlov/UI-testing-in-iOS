@@ -45,6 +45,7 @@ class POM: XCTestCase {
         BaseFunc(app: app)
             .tapAnyButton("Profile")
         LoginScreen(app: app)
+            .tapAny
             .textFieldAvailable("Username")
             .typeUserName("CodePro")
             .typePassword_toBaseFunc("abc123") // return BaseFunc
