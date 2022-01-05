@@ -16,6 +16,23 @@ class POM: XCTestCase {
         continueAfterFailure = false
         app = XCUIApplication()
         // app.launchArguments = ['testing']
+        
+    // add system dialogs monitor before launch
+    addUIInterruptionMonitor(withDescription: "alert monitor") { (alert) -> Bool in
+            let btnAllow = alert.buttons["Allow"]
+            let btnOK = alert.buttons["OK"]
+            if btnAllow.exists {
+                btnAllow.tap()
+                return true
+            }
+            if btnOK.exists {
+                btnOK.tap()
+                return true
+            }
+            XCTFail("Unexpected System Alert")
+            return false
+        }
+        
         app.launch()
     }
 
@@ -45,7 +62,6 @@ class POM: XCTestCase {
         BaseFunc(app: app)
             .tapAnyButton("Profile")
         LoginScreen(app: app)
-            .tapAny
             .textFieldAvailable("Username")
             .typeUserName("CodePro")
             .typePassword_toBaseFunc("abc123") // return BaseFunc
