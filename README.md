@@ -3,9 +3,12 @@ The starter code for the UI Testing Tutorial YouTube video.
 - [UI Testing iOS Tutorial](https://youtu.be/rmKbsQ41wVY)
 
 
-## test structurte 
+## test structurte (no POM)
 I expended current tutorial and created a couple separate classes as `base class` for custome `func`
 which we will use in test also couple ideas where keep `stings`, use `enum` and initialazie `indetifier` for UI element with `UI label`.
+
+## test structurte (POM)
+Added `POM` pattern for better visability, in folder `POM` via creating `protocol` and `struct` instance. 
 
 ## for localization
 Was create a `Test Plan` where in config marked two copnfiguration for `English US` and `German`. If you choose that `Test Plan` in `scheme` 
