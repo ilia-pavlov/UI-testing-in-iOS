@@ -12,7 +12,7 @@ import XCTest
 
 extension XCUIElement {
     
-    func clearText() {
+    func clearText() { 
         
         //
         // cf. and tip courtesy of

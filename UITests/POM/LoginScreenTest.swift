@@ -22,7 +22,7 @@ class POM: XCTestCase {
             let btnAllow = alert.buttons["Allow"]
             let btnOK = alert.buttons["OK"]
             if btnAllow.exists {
-                btnAllow.tap()
+                btnAllow.tap() 
                 return true
             }
             if btnOK.exists {
