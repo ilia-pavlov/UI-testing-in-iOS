@@ -2,7 +2,6 @@
 The starter code for the UI Testing Tutorial YouTube video. 
 - [UI Testing iOS Tutorial](https://youtu.be/rmKbsQ41wVY)
 
-
 ## test structurte (no POM)
 I expended current tutorial and created a couple separate classes as `base class` for custome `func`
 which we will use in test also couple ideas where keep `stings`, use `enum` and initialazie `indetifier` for UI element with `UI label`.
@@ -29,3 +28,18 @@ To Run UI test in terminal you can need use `.sh` files.
 For visualize report in terminal, make it more readable use [xcbeautify](https://github.com/thii/xcbeautify`).
 
 In `.sh` files `xcbeautif` report library already added. 
+
+## .gitignore
+
+1. Create Global config alias - One time only
+`git config --global alias.ignore '!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi'`
+
+2. For each Project (note ANGLE BRACKETS ARE NOT ALLOWED IN A YOUTUBE DESCRIPTION
+Change the ] below to a 'greater than' angle bracket
+
+`cd `--directory where your project is stored--
+`git ignore swift,macos ].gitignore`
+`git add .gitignore`
+`git commit -m "Add .gitignore file"`
+
+Well explanation find [here](https://youtu.be/UPkBC48NHnQ)
