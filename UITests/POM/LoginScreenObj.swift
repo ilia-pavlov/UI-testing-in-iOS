@@ -63,6 +63,9 @@ struct LoginScreen: Screen {
         return self
     }
     
+    /// <#Description#>
+    /// - Parameter indetifier: <#indetifier description#>
+    /// - Returns: <#description#>
     func tapStaticText(_ indetifier: String) -> Self {
         app.staticTexts[indetifier].tap()
         return self
